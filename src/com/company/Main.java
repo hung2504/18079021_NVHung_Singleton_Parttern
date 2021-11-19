@@ -1,6 +1,7 @@
 package com.company;
 
 import com.company.builder.Computer;
+import com.company.builder.Student;
 import com.company.singleton.*;
 
 import java.io.*;
@@ -41,5 +42,11 @@ public class Main {
                 "500 GB", "2 GB")
                 .setGraphicsCardEnabled(true).build();
         System.out.println(comp);
+
+
+        Student student = new Student.StudentBuilder(
+                1, "Hùng","14CTT",21,"Nam")
+                .build();
+        System.out.println(student);
     }
 }
